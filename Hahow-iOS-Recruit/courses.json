@@ -1,0 +1,109 @@
+[
+    {
+        "_id": "65e527e46292533d0c4d9c7a",
+        "status": "INCUBATING",
+        "successCriteria": {
+            "numSoldTickets": 30
+        },
+        "numSoldTickets": 1865,
+        "averageRating": 0,
+        "numRating": 0,
+        "title": "Gina 的全方位芳香療法課｜精油—你身心靈的舒緩解方",
+        "coverImage": {
+            "_id": "65eff95d2e9f676866416e25",
+            "url": "https://images.hahow.in/images/65eff95d2e9f676866416e25",
+            "height": 620,
+            "width": 999
+        },
+        "totalVideoLengthInSeconds": 0,
+        "createdAt": "2024-03-04T01:46:12.348Z",
+        "incubateTime": "2024-04-09T04:00:11.728Z",
+        "proposalDueTime": "2024-05-23T16:00:00.000Z"
+    },
+    {
+        "_id": "65194cea6355be57b65e7b00",
+        "status": "PUBLISHED",
+        "successCriteria": {
+            "numSoldTickets": 30
+        },
+        "numSoldTickets": 641,
+        "averageRating": 5,
+        "numRating": 5,
+        "title": "頂尖構圖x關鍵後製｜國際級風景攝影必修課",
+        "coverImage": {
+            "_id": "6530f7093f75c40891405125",
+            "url": "https://images.hahow.in/images/6530f7093f75c40891405125",
+            "height": 562,
+            "width": 906
+        },
+        "totalVideoLengthInSeconds": 27261,
+        "createdAt": "2023-10-01T10:41:46.317Z",
+        "incubateTime": "2023-10-26T04:00:11.211Z",
+        "publishTime": "2023-11-30T03:59:36.648Z",
+        "proposalDueTime": "2023-11-24T16:00:00.000Z"
+    },
+    {
+        "_id": "5a2170d5a6d4a5001ec3148d",
+        "status": "PUBLISHED",
+        "successCriteria": {
+            "numSoldTickets": 30
+        },
+        "numSoldTickets": 12283,
+        "averageRating": 4.96,
+        "numRating": 755,
+        "title": "用 Python 理財：打造小資族選股策略",
+        "coverImage": {
+            "_id": "5b04d8952a1203001e89084d",
+            "url": "https://images.hahow.in/images/5b04d8952a1203001e89084d"
+        },
+        "totalVideoLengthInSeconds": 30509,
+        "createdAt": "2017-12-01T15:10:13.000Z",
+        "incubateTime": "2018-02-22T04:03:57.607Z",
+        "publishTime": "2018-05-23T04:01:22.415Z",
+        "proposalDueTime": "2018-03-23T16:00:00.000Z"
+    },
+    {
+        "_id": "6059aee039f2512548c187c6",
+        "status": "PUBLISHED",
+        "successCriteria": {
+            "numSoldTickets": 30
+        },
+        "numSoldTickets": 11711,
+        "averageRating": 4.95,
+        "numRating": 402,
+        "title": "Notion 實戰課程：打造專屬數位工作術",
+        "coverImage": {
+            "_id": "6466f9efbd56034360cbd008",
+            "url": "https://images.hahow.in/images/6466f9efbd56034360cbd008",
+            "height": 562,
+            "width": 906
+        },
+        "totalVideoLengthInSeconds": 42719,
+        "createdAt": "2021-03-23T09:03:28.000Z",
+        "incubateTime": "2021-04-14T04:00:29.078Z",
+        "publishTime": "2021-06-18T04:00:24.712Z",
+        "proposalDueTime": "2021-05-13T16:00:00.000Z"
+    },
+    {
+        "_id": "60d801869643fa393b2e209c",
+        "status": "PUBLISHED",
+        "successCriteria": {
+            "numSoldTickets": 30
+        },
+        "numSoldTickets": 3601,
+        "averageRating": 5,
+        "numRating": 104,
+        "title": "減法攝影，感官加乘：逐格收藏觀景窗裡的世界",
+        "coverImage": {
+            "_id": "60dbbb87638ed068ba988c7a",
+            "url": "https://images.hahow.in/images/60dbbb87638ed068ba988c7a",
+            "height": 620,
+            "width": 999
+        },
+        "totalVideoLengthInSeconds": 28713,
+        "createdAt": "2021-06-27T04:41:42.000Z",
+        "incubateTime": "2021-07-15T04:00:20.438Z",
+        "publishTime": "2021-10-13T04:01:08.305Z",
+        "proposalDueTime": "2021-08-13T16:00:00.000Z"
+    }
+]
