@@ -6,28 +6,60 @@
 //
 
 import XCTest
+import Combine
 @testable import Hahow_iOS_Recruit
 
 class Hahow_iOS_RecruitTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var cancellables: Set<AnyCancellable>!
+    
+    override func setUp() {
+        super.setUp()
+        cancellables = []
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        cancellables = nil
+        super.tearDown()
     }
+    
+    func testLoadJSONSuccess() {
+        let expectation = self.expectation(description: "Loading JSON should succeed")
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let filename = "articles"
+        
+        DataLoader.shared.loadJSON(filename: filename, type: ArticlesData.self)
+            .sink(receiveCompletion: { completion in
+                if case .failure(let error) = completion {
+                    XCTFail("Loading JSON failed with error: \(error)")
+                }
+            }, receiveValue: { response in
+                XCTAssertNotNil(response, "Response should not be nil")
+                expectation.fulfill()
+            })
+            .store(in: &cancellables)
+        
+        wait(for: [expectation], timeout: 5.0)
     }
+    
+    func testLoadJSONFailure() {
+        let expectation = self.expectation(description: "Loading JSON should fail")
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        let filename = "invalidFile"
+        
+        DataLoader.shared.loadJSON(filename: filename, type: ArticlesData.self)
+            .sink(receiveCompletion: { completion in
+                if case .failure(let error) = completion {
+                    XCTAssertNotNil(error, "Error should not be nil")
+                    expectation.fulfill()
+                } else {
+                    XCTFail("Loading JSON should have failed")
+                }
+            }, receiveValue: { _ in
+                XCTFail("Expected no value, but got some")
+            })
+            .store(in: &cancellables)
+        
+        wait(for: [expectation], timeout: 5.0)
     }
-
+    
 }
