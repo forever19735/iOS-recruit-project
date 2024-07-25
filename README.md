@@ -1,4 +1,4 @@
-# Hahow iOS-recruit-project
+# iOS-recruit-project
 ## System Requirements
 本專案使用 Xcode 15.0.0 和 Swift 5 開發，deployment target 為 iOS 15.0。
 
